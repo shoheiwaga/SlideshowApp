@@ -96,9 +96,6 @@
                                     <constraint firstAttribute="width" constant="240" id="3zK-Y2-nkc"/>
                                     <constraint firstAttribute="height" constant="128" id="kva-aF-SLa"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="pbu-gR-Ipj" appends="YES" id="G2H-GV-I66"/>
-                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBx-cc-PGT">
                                 <rect key="frame" x="173" y="195" width="56" height="35"/>
@@ -126,11 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAv-a5-pGV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Uc0-vA-4de" userLabel="Exit" sceneMemberID="exit"/>
-                <pinchGestureRecognizer scale="2" id="pbu-gR-Ipj" colorLabel="IBBuiltInLabel-Yellow">
-                    <connections>
-                        <action selector="omake:" destination="ZMC-DX-TEV" id="4iJ-wl-Ytn"/>
-                    </connections>
-                </pinchGestureRecognizer>
+                <pinchGestureRecognizer scale="2" id="pbu-gR-Ipj" colorLabel="IBBuiltInLabel-Yellow"/>
             </objects>
             <point key="canvasLocation" x="712" y="4"/>
         </scene>
