@@ -69,25 +69,16 @@ class ViewController: UIViewController {
   
 }
 
-    /*
-    @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
-        
-        performSegue(withIdentifier: "Zoom", sender: self)
-     
-    }
-     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //if segue.identifier == "Zoom" {
             let imageZoomViewController = segue.destination as! ImageZoomViewController
                 imageZoomViewController.image = images[nowImage]
-        //}
-        //let imagezoomViewController: ImageZoomViewController = segue.destination　ダメだった
+        
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue){
         
     }
-
+    
 }
 

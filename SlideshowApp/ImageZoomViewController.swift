@@ -20,7 +20,15 @@ class ImageZoomViewController: UIViewController {
         
     }
     
-
+    @objc func omake(gesture: UIPinchGestureRecognizer) {
+        if let pinch = gesture.view{
+            pinch.transform = CGAffineTransform(scaleX: gesture.scale, y: gesture.scale)
+                pinch.transform = pinch.transform.scaledBy(x: gesture.scale, y: gesture.scale)
+                gesture.scale = 1.0 // 次のジェスチャーのためにスケールをリセット
+            }
+        }
+    
+    
     /*
     // MARK: - Navigation
 
