@@ -71,6 +71,11 @@ class ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        timer?.invalidate() //timer止める
+        playStatus = true
+        nextImage.isEnabled = true //進むボタン有効
+        returnImage.isEnabled = true //戻る有効
+        playstopImage.setTitle("再生", for: .normal) //ボタンテキスト変更
             let imageZoomViewController = segue.destination as! ImageZoomViewController
                 imageZoomViewController.image = images[nowImage]
         
